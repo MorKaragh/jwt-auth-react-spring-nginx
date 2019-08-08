@@ -1,0 +1,8 @@
+========== ПОЛУЧЕНИЕ ТОКЕНА ==========
+
+** через nginx **
+curl http://localhost/auth/authenticate -X POST -d '{"username": "admin", "password": "123321"}' -H "Content-Type: application/json"
+
+** напрямую **
+curl http://localhost:8147/auth-server/authenticate -X POST -d '{"username": "admin", "password": "123321"}' -H "Content-Type: application/json"
+
